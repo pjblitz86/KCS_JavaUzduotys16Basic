@@ -15,46 +15,28 @@ public class Main {
                 uzduotis1.spausdinimas();
                 break;
             case 2:
-                Uzduotis2 uzduotis2  = new Uzduotis2();
-                uzduotis2.pasisveikinimas();
-                uzduotis2.nuskaitymas();
-                uzduotis2.koksIlgis();
+                new Uzduotis2();
                 break;
             case 3:
-                Uzduotis3 uzduotis3 = new Uzduotis3();
-                uzduotis3.ivedimas2Skaiciu();
-                uzduotis3.atspausdinimas();
+                new Uzduotis3();
                 break;
             case 4:
-                Uzduotis4 uzduotis4 = new Uzduotis4();
-                uzduotis4.ivedimas2Skaiciu();
-                uzduotis4.atspausdinimas();
+                new Uzduotis4();
                 break;
             case 5:
-                Uzduotis5 uzduotis5 = new Uzduotis5();
-                uzduotis5.ivedimas2Skaiciu();
-                uzduotis5.atspausdinimas();
+                new Uzduotis5();
                 break;
             case 6:
-                Uzduotis6 uzduotis6 = new Uzduotis6();
-                uzduotis6.svorisIrUgis();
-                uzduotis6.kmiSkaiciavimas();
+                new Uzduotis6();
+                break;
             case 7:
-                Uzduotis7 uzduotis7 = new Uzduotis7();
-                uzduotis7.svorisIrUgis();
-                uzduotis7.kmiSkaiciavimas(uzduotis7.svoris, uzduotis7.ugis);
-                uzduotis7.atspausdinimas();
+                new Uzduotis7();
                 break;
             case 8:
-                Uzduotis8 uzduotis8 = new Uzduotis8();
-                uzduotis8.kmIrSanaudos();
-                uzduotis8.vidurkisKuroSanaudu();
+                new Uzduotis8();
                 break;
             case 9:
-                Uzduotis9 uzduotis9 = new Uzduotis9();
-                uzduotis9.kmIrSanaudos();
-                uzduotis9.vidurkisKuroSanaudu();
-                uzduotis9.atspausdinimas();
+                new Uzduotis9();
                 break;
             case 10:
                 new Uzduotis10();
@@ -63,19 +45,21 @@ public class Main {
                 new Uzduotis11();
                 break;
             case 12:
-                new Uzduotis12(90, 1.75);
+                Uzduotis12 uzduotis12 = new Uzduotis12(90, 1.75);
+                uzduotis12.kmiSkaiciavimas();
                 break;
             case 13:
                 new Uzduotis13();
                 break;
             case 14:
                 new Uzduotis14();
+                break;
             case 15:
-
-
-
-
-
+                new Uzduotis15();
+                break;
+            case 16:
+                new Uzduotis16();
+                break;
         }
 
     }

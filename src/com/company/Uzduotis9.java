@@ -11,6 +11,13 @@ public class Uzduotis9 {
     public double kuroSanaudos;
     public double vidurkis;
 
+    // konstruktorius
+    public Uzduotis9(){
+        kmIrSanaudos();
+        vidurkisKuroSanaudu();
+        atspausdinimas();
+    }
+
     // paprasyti vartotojo ivesti km ir sanaudas ir nuskaityti
     public void kmIrSanaudos(){
         Scanner skeneris = new Scanner(System.in);

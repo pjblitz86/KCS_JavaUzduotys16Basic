@@ -7,6 +7,13 @@ import java.util.Scanner;
  */
 public class Uzduotis2 {
     private String vardas;
+
+    // konstruktorius metodu paleidimui
+    public Uzduotis2(){
+        pasisveikinimas();
+        nuskaitymas();
+        koksIlgis();
+    }
     public void pasisveikinimas(){
         // pasisveikinimas
         System.out.println("Iveskite zodi:");

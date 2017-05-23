@@ -9,6 +9,13 @@ public class Uzduotis5 {
     // paprasyti ivesti 2 skaicius
     public float skaicius1;
     public float skaicius2;
+
+    // konstruktorius
+    public Uzduotis5(){
+        ivedimas2Skaiciu();
+        atspausdinimas();
+    }
+
     public void ivedimas2Skaiciu(){
         Scanner skeneris = new Scanner(System.in);
         System.out.println("Iveskite 1a skaiciu:");

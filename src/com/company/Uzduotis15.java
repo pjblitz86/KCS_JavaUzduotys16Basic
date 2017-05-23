@@ -10,6 +10,11 @@ public class Uzduotis15 {
     private double skaicius;
     private double skaicius2;
 
+    // konstruktorius metodu paleidimui
+    public Uzduotis15(){
+        uzklausimas();
+        rezultatuAtspausdinimas();
+    }
 
     // paprasom vartotojo ivesti 2 krastines
     // kvadrato, staciakampio, trikampio plotu skaiciavimui
@@ -37,11 +42,7 @@ public class Uzduotis15 {
         double rezultatas = (a * b)/2;
         return rezultatas;
     }
-    // atliekame apskritimo ploto skaiciavima metode su return
-    public double apskritimoSkaiciavimas(double r){
-        double rezultatas = Math.PI*Math.pow(r,2);
-        return rezultatas;
-    }
+
 
     public void rezultatuAtspausdinimas(){
         System.out.printf("Kvadrato plotas = %.2f", kvadratoSkaiciavimas(skaicius));
@@ -49,7 +50,5 @@ public class Uzduotis15 {
         System.out.printf("Staciakampio plotas = %.2f", staciakampioSkaiciavimas(skaicius, skaicius2));
         System.out.println();
         System.out.printf("Trikampio plotas = %.2f", trikampioSkaiciavimas(skaicius, skaicius2));
-        System.out.println();
-        System.out.printf("Apskritimo plotas = %.2f", apskritimoSkaiciavimas(spindulys));
     }
 }

@@ -9,11 +9,17 @@ public class Uzduotis4 {
     // paprasyti ivesti 2 skaicius
     public int skaicius1;
     public int skaicius2;
+
+    // konstruktorius
+    public Uzduotis4(){
+        ivedimas2Skaiciu();
+        atspausdinimas();
+    }
     public void ivedimas2Skaiciu(){
         Scanner skeneris = new Scanner(System.in);
-        System.out.println("Iveskite 1a skaiciu:");
+        System.out.println("Iveskite 1a sveika skaiciu:");
         skaicius1 = skeneris.nextInt();
-        System.out.println("Iveskite 2a skaiciu:");
+        System.out.println("Iveskite 2a sveika skaiciu:");
         skaicius2 = skeneris.nextInt();
     }
     // apskaiciuoti suma

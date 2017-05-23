@@ -11,6 +11,12 @@ public class Uzduotis6 {
     public double ugis;
     public double kmi;
 
+    // konstruktorius
+    public Uzduotis6(){
+        svorisIrUgis();
+        kmiSkaiciavimas();
+    }
+
     // paklausti ir nuskaityti mase ir ugi
     public void svorisIrUgis() {
         Scanner skeneris = new Scanner(System.in);

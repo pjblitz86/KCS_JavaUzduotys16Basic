@@ -11,6 +11,12 @@ public class Uzduotis16 {
     private double skaicius2;
     private double spindulys;
 
+    // konstruktorius metodu paleidimui
+    public Uzduotis16(){
+        uzklausimas();
+        rezultatuAtspausdinimas();
+    }
+
     // paprasom vartotojo ivesti 2 krastines ir spinduli
     // kvadrato, staciakampio, trikampio ir apskritimo plotu skaiciavimui
     // ir issaugom i kintamuosius

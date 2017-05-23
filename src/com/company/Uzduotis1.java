@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Uzduotis1{
     private String vardas;
+
     // 1 paprasyti vartotojo ivesti varda
     public void pasisveikinimas() {
         System.out.println("Iveskite vartotojo varda");

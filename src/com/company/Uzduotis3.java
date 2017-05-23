@@ -12,6 +12,13 @@ public class Uzduotis3 {
     public int suma;
     public int skirtumas;
 
+    // konstruktorius
+    public Uzduotis3(){
+        ivedimas2Skaiciu();
+        SumaIrSkirtumas(skaicius1, skaicius2);
+        atspausdinimas();
+    }
+
     public void ivedimas2Skaiciu(){
         Scanner skeneris = new Scanner(System.in);
         System.out.println("Iveskite 1a sveika skaiciu:");
@@ -21,8 +28,8 @@ public class Uzduotis3 {
     }
     // metodas kuris skaiciuoja suma ir skirtuma
     public void SumaIrSkirtumas(int a, int b){
-        int suma = a + b;
-        int atimtis = a - b;
+        suma = a + b;
+        skirtumas = a - b;
     }
 
     // atspausdinti suma ir skirtuma
