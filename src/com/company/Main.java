@@ -1,20 +1,28 @@
 package com.company;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-    Scanner skeneris = new Scanner(System.in);
-        System.out.println("Iveskite kuria uzduoti nuo 1 iki 16 norite pasirinkti");
+        Scanner skeneris = new Scanner(System.in);
+        System.out.println("Iveskite kuria uzduoti nuo 1 iki 16 pasirenkate");
         int pasirinkimas = skeneris.nextInt();
-        switch (pasirinkimas){
+        switch (pasirinkimas) {
             case 1:
+                // standartinis uzduoties is klases paleidimas:
+                // kuriam objekta ir su juo iskvieciam metodus
+                // bet metodai turi buti public
                 Uzduotis1 uzduotis1 = new Uzduotis1();
                 uzduotis1.pasisveikinimas();
                 uzduotis1.nuskaitymas();
                 uzduotis1.spausdinimas();
                 break;
             case 2:
+                // optimizuotas klases metodu paleidimas per konstruktoriu
+                // cia mes ji sukuriame, o klasej jame jau aprasyta
+                // kokius metodus paleisti, kad veiktu uzduotis
+                // ir papildomai galim uzslepti metodus su private
                 new Uzduotis2();
                 break;
             case 3:
@@ -45,6 +53,8 @@ public class Main {
                 new Uzduotis11();
                 break;
             case 12:
+                // siuo atveju uzduotyje nurodyta, kad paleidziame programa
+                // duodami konstruktoriui argumentus, kuriuos jis klasej priskiria kintamiesiems
                 Uzduotis12 uzduotis12 = new Uzduotis12(90, 1.75);
                 uzduotis12.kmiSkaiciavimas();
                 break;
@@ -60,7 +70,8 @@ public class Main {
             case 16:
                 new Uzduotis16();
                 break;
+            default:
+                System.out.println("Klaida: neatpazintas pasirinkimas");
         }
-
     }
 }

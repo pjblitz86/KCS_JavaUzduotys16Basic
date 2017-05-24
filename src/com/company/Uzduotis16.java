@@ -12,7 +12,7 @@ public class Uzduotis16 {
     private double spindulys;
 
     // konstruktorius metodu paleidimui
-    public Uzduotis16(){
+    public Uzduotis16() {
         uzklausimas();
         rezultatuAtspausdinimas();
     }
@@ -20,7 +20,7 @@ public class Uzduotis16 {
     // paprasom vartotojo ivesti 2 krastines ir spinduli
     // kvadrato, staciakampio, trikampio ir apskritimo plotu skaiciavimui
     // ir issaugom i kintamuosius
-    public void uzklausimas(){
+    private void uzklausimas() {
         Scanner skeneris = new Scanner(System.in);
         System.out.println("Iveskite 1a krastine");
         skaicius = skeneris.nextDouble();
@@ -29,28 +29,33 @@ public class Uzduotis16 {
         System.out.println("Iveskite apskritimo spinduli");
         spindulys = skeneris.nextDouble();
     }
+
     // atliekame kvadrato skaiciavima metode su return
-    public double kvadratoSkaiciavimas(double a){
+    private double kvadratoSkaiciavimas(double a) {
         double rezultatas = Math.pow(a, 2);
         return rezultatas;
     }
+
     // atliekame staciakampio skaiciavima metode su return
-    public double staciakampioSkaiciavimas(double a, double b){
+    private double staciakampioSkaiciavimas(double a, double b) {
         double rezultatas = a * b;
         return rezultatas;
     }
+
     // atliekame trikampio skaiciavima metode su return
-    public double trikampioSkaiciavimas(double a, double b){
-        double rezultatas = (a * b)/2;
-        return rezultatas;
-    }
-    // atliekame apskritimo ploto skaiciavima metode su return
-    public double apskritimoSkaiciavimas(double r){
-        double rezultatas = Math.PI*Math.pow(r,2);
+    private double trikampioSkaiciavimas(double a, double b) {
+        double rezultatas = (a * b) / 2;
         return rezultatas;
     }
 
-    public void rezultatuAtspausdinimas(){
+    // atliekame apskritimo ploto skaiciavima metode su return
+    private double apskritimoSkaiciavimas(double r) {
+        double rezultatas = Math.PI * Math.pow(r, 2);
+        return rezultatas;
+    }
+
+    // isvedame suformatuotus rezultatus iskviesdami atitinkamus metodus
+    private void rezultatuAtspausdinimas() {
         System.out.printf("Kvadrato plotas = %.2f", kvadratoSkaiciavimas(skaicius));
         System.out.println();
         System.out.printf("Staciakampio plotas = %.2f", staciakampioSkaiciavimas(skaicius, skaicius2));

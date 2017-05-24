@@ -7,8 +7,8 @@ import java.util.Scanner;
  */
 public class Uzduotis9 {
     // apsirasyti kintamuosius
-    public double nuvaziuotiKm;
-    public double kuroSanaudos;
+    private double nuvaziuotiKm;
+    private double kuroSanaudos;
     public double vidurkis;
 
     // konstruktorius
@@ -19,7 +19,7 @@ public class Uzduotis9 {
     }
 
     // paprasyti vartotojo ivesti km ir sanaudas ir nuskaityti
-    public void kmIrSanaudos(){
+    private void kmIrSanaudos(){
         Scanner skeneris = new Scanner(System.in);
         System.out.println("Iveskite nuvaziuotus km:");
         nuvaziuotiKm = skeneris.nextDouble();
@@ -27,13 +27,13 @@ public class Uzduotis9 {
         kuroSanaudos = skeneris.nextDouble();
     }
     // vidutines kuro sanaudos su return
-    public double vidurkisKuroSanaudu(){
+    private double vidurkisKuroSanaudu(){
         vidurkis = kuroSanaudos * 100 / nuvaziuotiKm;
         return vidurkis;
     }
 
-    // isvedimas vidines kuro sanaudos
-    public void atspausdinimas(){
+    // isvedimas vidutines kuro sanaudos
+    private void atspausdinimas(){
         System.out.printf("Vidutines kuro sanaudos = %.2f L/100km", vidurkis);
     }
 }

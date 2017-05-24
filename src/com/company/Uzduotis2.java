@@ -8,23 +8,27 @@ import java.util.Scanner;
 public class Uzduotis2 {
     private String vardas;
 
-    // konstruktorius metodu paleidimui
-    public Uzduotis2(){
+    // konstruktorius metodu paleidimui is switch
+    public Uzduotis2() {
         pasisveikinimas();
         nuskaitymas();
         koksIlgis();
     }
-    public void pasisveikinimas(){
+
+    // paprasome vartotojo ivesti zodi
+    private void pasisveikinimas() {
         // pasisveikinimas
         System.out.println("Iveskite zodi:");
     }
-    // nusiskaitymas
-    public void nuskaitymas(){
+
+    // nusiskaitymas ivesto String i kintamaji
+    private void nuskaitymas() {
         Scanner skeneris = new Scanner(System.in);
         vardas = skeneris.nextLine();
     }
-    // atspausdinimas simboliu
-    public void koksIlgis(){
-        System.out.println(vardas.length());
+
+    // atspausdinimas simboliu kieki naudodami length funkcija
+    private void koksIlgis() {
+        System.out.print("Ivesto zodzio ilgis: " + vardas.length());
     }
 }

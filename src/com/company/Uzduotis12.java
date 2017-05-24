@@ -8,18 +8,18 @@ public class Uzduotis12 {
     private double ugis;
     private double kmi;
 
-    // konstruktorius su parametrais, kad nustatytu kintamuju reiksmes kmi apskaiciavimui
+    // overloadintas konstruktorius su parametrais, iskvieciamas is Main switch
+    // kad priskirtu reiksmes kintamiesiems
     public Uzduotis12(double svoris, double ugis) {
         this.svoris = svoris;
         this.ugis = ugis;
     }
 
-    // skaiciuojam ir isvedam KMI
+    // skaiciuojam ir isvedam KMI pagal gautas reiksmes is konstruktoriaus
     public void kmiSkaiciavimas() {
         kmi = svoris / (ugis * ugis);
         System.out.printf("KMI: %.2f\n", kmi);
     }
-
 
 
 }

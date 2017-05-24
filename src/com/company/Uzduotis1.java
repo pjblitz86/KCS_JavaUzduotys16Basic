@@ -2,22 +2,24 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Uzduotis1{
+public class Uzduotis1 {
     private String vardas;
 
-    // 1 paprasyti vartotojo ivesti varda
+    // paprasome vartotojo ivesti varda
     public void pasisveikinimas() {
         System.out.println("Iveskite vartotojo varda");
     }
-    //
+
+    // nuskaitom varda i deklaruota kintamaji
     public void nuskaitymas() {
         Scanner skeneris = new Scanner(System.in);
         vardas = skeneris.nextLine();
     }
-    public void spausdinimas()
-    {
-        for (int i = 0; i < 5; i++){
-            System.out.println("Jusu vardas: " + vardas);
+
+    // atspausdinam ka ivede 5 kartus naudodami for
+    public void spausdinimas() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println(vardas);
         }
 
     }
